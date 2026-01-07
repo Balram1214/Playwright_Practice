@@ -11,6 +11,6 @@ test('test', async ({ page }) => {
   await page.waitForTimeout(4000);
 
     const username =await page.locator("//p[text()='Doaa Taman']").textContent();
-    await expect(await page.getByText(username)).toBeVisible();
+    await expect(page.getByText(username)).toBeVisible();
 
 });

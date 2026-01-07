@@ -19,10 +19,10 @@ test('Scrolling test', async ({page}) => {
 
     await page.keyboard.press('End');
 
-    await page.waitForTimeout(4000);
-
     await page.goto("https://practicetestautomation.com/practice-test-login/");
-    const ts2=await page.locator("//h5[text()='Test case 2: Negative username test']");
+    await page.waitForTimeout(8000);
+
+    const ts2=page.locator("//h5[text()='Test case 2: Negative username test']");
     await ts2.scrollIntoViewIfNeeded();
     await page.waitForTimeout(4000);
 
