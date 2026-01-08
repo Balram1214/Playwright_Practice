@@ -1,8 +1,8 @@
-const {test, expect} = requires('@playwright/test')
+const {test, expect} = require('@playwright/test')
 
 test('Dynamic Drop Down', async({page}) => {
 
-    
+
 
 
 
